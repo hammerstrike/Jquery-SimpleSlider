@@ -338,6 +338,34 @@ a {
    right:0;
     background-position:-35px 0px;
 }
+
+/* vertical arrows  */
+.vertical-arrows .gallery-nav-btns{
+	top: 0;
+    left: 50%;
+    width: 60px;
+    height: 100%;
+    margin-left: -30px;
+    margin-top: 0;
+}
+.vertical-arrows .gallery-nav-btns a{
+	background-image:url('../Images/slim-arrow-sprite_Vertical.png');
+	 width: 60px;
+    height: 35px;
+}
+
+
+.vertical-arrows .nav-btn.prev {
+   bottom:0;
+   background-position:0px -31px;
+   
+}
+.vertical-arrows .nav-btn.next{
+    top: 0;
+    background-position: 0px 0px;
+   
+}
+
 /* ======================= 
     Product User Profile
    ===================== */

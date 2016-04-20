@@ -1,4 +1,4 @@
-﻿/*
+/*
 * jQuery Slider Plugin
 * Version : Am2_SimpleSlider.js
 * author  :amit & amar
@@ -10,9 +10,12 @@
 
 (function ($) {
 
-    jQuery.fn.Am2_SimpleSlider = function () {
+    jQuery.fn.Am2_SimpleSlider = function (options) {
+		
+		
+		var  vA = (options.verticalArrows) ? 'vertical-arrows' :'';
         //popup div
-        $div = $('<div class="product-gallery-popup"> <div class="popup-overlay"></div> <div class="product-popup-content"> <div class="product-image"> <img id="gallery-img" src="" alt="" /> <div class="gallery-nav-btns"> <a id="nav-btn-next" class="nav-btn next" ></a> <a id="nav-btn-prev" class="nav-btn prev" ></a></div> </div><div class="product-information"> <p class="product-desc"></p></div> <div class="clear"></div><a href="#" class="cross">X</a></div></div>').appendTo('body');
+        $div = $('<div class="product-gallery-popup '+vA+'"> <div class="popup-overlay"></div> <div class="product-popup-content"> <div class="product-image"> <img id="gallery-img" src="" alt="" /> <div class="gallery-nav-btns"> <a id="nav-btn-next" class="nav-btn next" ></a> <a id="nav-btn-prev" class="nav-btn prev" ></a></div> </div><div class="product-information"> <p class="product-desc"></p></div> <div class="clear"></div><a href="#" class="cross">X</a></div></div>').appendTo('body');
 
         //on image click   
         $(this).click(function () {
